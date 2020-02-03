@@ -1,0 +1,89 @@
+{
+  "connection": "default",
+  "collectionName": "stages",
+  "info": {
+    "name": "Stage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "private": false,
+      "required": true
+    },
+    "durationMin": {
+      "type": "integer",
+      "required": true
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "stageResponsable": {
+      "type": "email"
+    },
+    "stage_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "stage_master": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "durationMax": {
+      "type": "integer",
+      "required": true
+    },
+    "Descrp": {
+      "type": "richtext",
+      "required": true
+    },
+    "level": {
+      "model": "level"
+    },
+    "stage_type": {
+      "model": "stage-type"
+    },
+    "renu": {
+      "type": "decimal"
+    },
+    "location": {
+      "type": "enumeration",
+      "enum": [
+        "Ariana",
+        "Beja",
+        "Ben_Arous",
+        "Bizerte",
+        "Gabes",
+        "Gafsa",
+        "Jendouba",
+        "Kairouan",
+        "Kasserine",
+        "Kebili",
+        "Kef",
+        "Mahdia",
+        "Manouba",
+        "Medenine",
+        "Monastir",
+        "Nabeul",
+        "Sfax",
+        "Sidi_Bouzid",
+        "Siliana",
+        "Sousse",
+        "Tataouine",
+        "Tozeur",
+        "Tunis",
+        "Zaghouan"
+      ],
+      "required": true,
+      "default": "Tunis"
+    }
+  }
+}

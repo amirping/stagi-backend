@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "stage_types",
+  "info": {
+    "name": "stage-type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "descrp": {
+      "type": "text"
+    }
+  }
+}

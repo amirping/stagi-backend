@@ -1,0 +1,41 @@
+{
+  "info": {
+    "name": "stage-request"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "stage": {
+      "model": "stage"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "date_submit": {
+      "type": "datetime"
+    },
+    "motivation": {
+      "type": "richtext"
+    },
+    "cv": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "etat": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "accepted",
+        "rejected"
+      ],
+      "default": "pending"
+    }
+  },
+  "connection": "default",
+  "collectionName": "stage_requests"
+}
