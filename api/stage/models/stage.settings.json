@@ -52,7 +52,8 @@
       "model": "stage-type"
     },
     "renu": {
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "location": {
       "type": "enumeration",

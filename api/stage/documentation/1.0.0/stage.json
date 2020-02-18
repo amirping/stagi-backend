@@ -655,7 +655,8 @@
             }
           },
           "renu": {
-            "type": "number"
+            "type": "number",
+            "default": 0
           },
           "location": {
             "type": "string",
@@ -734,7 +735,8 @@
             "type": "string"
           },
           "renu": {
-            "type": "number"
+            "type": "number",
+            "default": 0
           },
           "location": {
             "type": "string",
